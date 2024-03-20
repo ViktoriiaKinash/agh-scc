@@ -1,18 +1,12 @@
-import "./App.css";
+import RoutesPaths from "./core/RoutesPaths";
+import React from "react";
+import { RouterProvider } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <p>Tutaj będzie strona SCK</p>
-      <span
-        className="smile"
-        role="img"
-        aria-label="smile"
-        style={{ fontSize: 30 }}
-      >
-        {String.fromCodePoint(0x1f600)}
-      </span>
-    </div>
+    <React.StrictMode>
+      <RouterProvider router={RoutesPaths} />
+    </React.StrictMode>
   );
 }
 
